@@ -19,14 +19,13 @@ Download the pre-trained weights for the victim models and CDMA from GoogleDrive
 bash
 python negI-FGSM.py --input_dir test_image --output_dir exp/negI-FGSM/epsilon7000_iter300/incepv4 --max_epsilon 7000 --num_iter 300  --image_width 299 --image_height 299 --batch_size 1 --momentum 0
 
-bash
+
 python RMS-negI-FGSM.py --input_dir test_image --output_dir exp/RMS-negI-FGSM/epsilon7000_iter300/incepv4 --max_epsilon 7000 --num_iter 300  --image_width 299 --image_height 299 --batch_size 1 --momentum 0
 
-bash
+
 python Adam-negI-FGM.py --input_dir test_image --output_dir exp/Adam-negI-FGM/epsilon7000_iter300/incepv4 --max_epsilon 7000 --num_iter 300  --image_width 299 --image_height 299 --batch_size 1 --momentum 0
 
 
-bash
 python Nadam-negI-FGM.py --input_dir test_image --output_dir exp/Nadam-negI-FGM/epsilon7000_iter300/incepv4 --max_epsilon 7000 --num_iter 300  --image_width 299 --image_height 299 --batch_size 1 --momentum 0
 
 # Test
